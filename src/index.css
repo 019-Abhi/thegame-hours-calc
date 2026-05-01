@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, sans-serif;
   color: #111827; 
-  background: rgb(202, 199, 199);
+  background-image: linear-gradient(white, rgb(111, 100, 100)) ;
 }
 
 a {

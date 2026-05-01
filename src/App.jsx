@@ -41,7 +41,7 @@ function App() {
       return
     }
 
-    if (daysLeft === null) {
+    if (daysLeft === null) { 
       setErrorMsg('Invalid deadline')
       setShowResult(false)
       return
@@ -113,31 +113,34 @@ function App() {
               />
             </label>
 
-            <button className="calculate-btn" onClick={CalculateDaysLeft}>
-              Calculate
-            </button>
+            <div className='calc-button-row'>
+              <button className="calculate-btn" onClick={CalculateDaysLeft}>
+                Calculate
+              </button>
+            </div>
+
+            <div className="results">
+              <div className="result-tile">
+                <p className="tile-label">Days left</p>
+                <p className="tile-value">
+                  {daysLeft === null ? '--' : daysLeft < 0 ? 'Past' : daysLeft}
+                </p>
+              </div>
+              <div className="result-tile">
+                <p className="tile-label">Hours left</p>
+                <p className="tile-value">{showResult ? hoursLeft.toFixed(1) : '--'}</p>
+              </div>
+              <div className="result-tile">
+                <p className="tile-label">Hours/Day</p>
+                <p className="tile-value">
+                  {showResult && Number.isFinite(hoursPerDay)
+                    ? hoursPerDay.toFixed(2)
+                    : '--'}
+                </p>
+              </div>
+            </div>
           </div>
 
-        </div>
-        <div className="results">
-          <div className="result-tile">
-            <p className="tile-label">Days left</p>
-            <p className="tile-value">
-              {daysLeft === null ? '--' : daysLeft < 0 ? 'Past' : daysLeft}
-            </p>
-          </div>
-          <div className="result-tile">
-            <p className="tile-label">Hours left</p>
-            <p className="tile-value">{showResult ? hoursLeft.toFixed(1) : '--'}</p>
-          </div>
-          <div className="result-tile">
-            <p className="tile-label">Hours/Day</p>
-            <p className="tile-value">
-              {showResult && Number.isFinite(hoursPerDay)
-                ? hoursPerDay.toFixed(2)
-                : '--'}
-            </p>
-          </div>
         </div>
     </main>
   )
