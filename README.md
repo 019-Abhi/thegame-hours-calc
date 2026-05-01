@@ -1,0 +1,1 @@
+This is a simple website I made in my free time to calculate how many hours are needed per day to achieve your goal of total hours for hack club the game.
