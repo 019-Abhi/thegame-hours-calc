@@ -1,0 +1,88 @@
+.page {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 15px;
+}
+
+.field-full {
+  grid-column: span 2;
+}
+
+.field input {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #d1d5db;
+  background: #fff;
+}
+
+.calculator-card {
+
+  background-color: rgb(177, 172, 172);
+  padding: 35px;
+  border-radius: 0px;
+
+}
+
+
+.calculate-btn {
+  padding: 14px 16px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  background: black
+}
+
+.results {
+  position: absolute;
+  width: 65%; 
+  height: 18%;
+  margin-top: 24px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.result-tile::-webkit-scrollbar {
+  display: none;
+}
+
+.result-tile {
+  padding: 20px;
+  background-color: rgb(173, 174, 183);
+  width: 150px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.tile-label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.tile-value {
+  margin: 8px 0 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+}
