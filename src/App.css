@@ -28,7 +28,6 @@
 
   background-color: rgb(177, 172, 172);
   padding: 35px;
-  border-radius: 19px;
 
 }
 
@@ -50,7 +49,6 @@
   color: #fff;
   border: none;
   background: black;
-  border-radius: 19px;
   background-color: rgb(36, 65, 75);
 }
 
@@ -75,11 +73,10 @@
   background-color: rgb(206, 208, 225);
   width: 150px;
   height: 90px;
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 19px;
 }
 
 .tile-label {

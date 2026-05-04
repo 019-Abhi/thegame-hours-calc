@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 
-//returns numbers of days left
 function DaysUntilDeadline(deadlineD) {
 
   const x = /^(\d{4})-(\d{2})-(\d{2})$/.exec(deadlineD)
@@ -13,7 +12,6 @@ function DaysUntilDeadline(deadlineD) {
   const now = new Date()
   const start = new Date(now.getFullYear(), now.getMonth(), now.getDate())
   return Math.round((deadline - start) / (1000 * 60 * 60 * 24))
-
 }
 
 function App() {
